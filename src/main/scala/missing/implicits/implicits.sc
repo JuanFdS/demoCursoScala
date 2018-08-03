@@ -11,11 +11,4 @@ case class Point(x: Int, y: Int) {
 object Origen extends Point(0, 0)
 
 
-(1, 2) + Origen
-
-(0, 1) + (1, 0)
-
-val coordenadas: List[TuplaDePuntos] = List(Point(0, 0))
-
-
 
