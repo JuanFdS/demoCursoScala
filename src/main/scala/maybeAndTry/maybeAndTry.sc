@@ -1,4 +1,6 @@
-import typeAliasesAndUndefined.Order
+class Order(lineItems : List[Item], description : String)
+
+class Item(val price : Int, val quantity : Int)
 
 import scala.util.Try
 
@@ -15,6 +17,42 @@ class OrderRepository {
 
   def findBy(orderNumber: Int) : Order = try { orders(orderNumber) } catch { case _ ⇒ null }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+val orderRepository = new OrderRepository()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
